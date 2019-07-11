@@ -8,7 +8,7 @@
 import LoginContainer from './components/Container'
 export default {
   name: 'Login',
-  components:{LoginContainer}
+  components:{ LoginContainer}
 }
 </script>
 
