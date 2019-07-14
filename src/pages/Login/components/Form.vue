@@ -6,9 +6,11 @@
 	  <el-form-item label="密码" prop="password">
 	    <el-input v-model="login.password" show-password></el-input>
 	  </el-form-item>
-	  <el-form-item>
-	    <el-button type="primary" @click="onSubmit('login')">登录</el-button>
-	  </el-form-item>
+    <router-link to='/index'>
+  	  <el-form-item>
+  	    <el-button type="primary" @click="onSubmit('login')">登录</el-button>
+  	  </el-form-item>
+    </router-link>
 	</el-form>
 </template>
 
@@ -39,6 +41,7 @@ export default {
             //this.base.token = data.data.token　　　　
             //console.log("this.base.tokenthis.base.token",this.base.token)
             alert(data);
+
         }).catch(err=>{
                 console.log(err)
          }
